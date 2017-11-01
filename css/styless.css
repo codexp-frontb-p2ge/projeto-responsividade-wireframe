@@ -5,6 +5,7 @@
     text-align: center;
     font-family: 'Roboto', sans-serif;
     color: gray;
+}
 
 .cards {
     text-align: center;
@@ -16,4 +17,8 @@
 
 .cards p {
     color:#808080;
+}
+
+.fa {
+    color:dimgray;
 }
