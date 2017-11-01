@@ -1,7 +1,19 @@
+
 /*to do*/
 
 .video {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     color: gray;
+
+.cards {
+    text-align: center;
+}
+
+.cards__title {
+    font-size: 3em;
+}
+
+.cards p {
+    color:#808080;
 }
