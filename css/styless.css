@@ -14,56 +14,59 @@ html, body {
     position: relative;
     width: 100%;
 }
+
 .header a {
     color: white;
     font-size: 2em;
 }
 
-.header__menu-hamburger{
+.header__menu-hamburger {
     float:right;
 }
-.header__menu-aside{
+
+.header__menu-aside {
     display: none;
     float: right;
 }
-.header__menu-aside li{
+
+.header__menu-aside li {
     display: inline-block;
     font-size: 0.6em;
 }
-.header__menu-aside a{
+
+.header__menu-aside a {
     text-decoration: none;
 }
+
 .header h3 {
-    text-align: center;
-    color: white;
     clear: both;
+    color: white;
+    text-align: center;
 }
 
-.header__link-down{
+.header__link-down {
+    bottom: 0;
     display: block;
+    position: absolute;
     text-align: center;
     width: 100%;
-    position: absolute;
-    bottom: 0;
 }
 
 /* TANAKA */
 .cards {
-    text-align: center;
-    padding: 0 1em;
-    margin: 1em 0 0 0;
     box-sizing: border-box;
     color:#808080;
+    margin: 1em 0 0 0;
+    padding: 0 1em;
+    text-align: center;    
 }
 
 .cards__title {
     font-size: 3em;
-    
     margin: 0;
 }
 
 .cards h4 {
-    
     font-weight: bold;
     margin: 0;
 }
@@ -74,26 +77,26 @@ html, body {
 
 /* POLI */
 .video {
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    color: #808080;
-    padding: 0 1em;
-    margin: 1em 0 0 0;
     box-sizing: border-box;
+    color: #808080;
+    font-family: 'Roboto', sans-serif;
+    margin: 1em 0 0 0;
+    padding: 0 1em;
+    text-align: center;
 }
 
 .video iframe {
-    width: 100%;
     height: auto;
+    width: 100%;
 }
 
 /* TANAKA */
 .article {
-    text-align: center;
-    padding: 0 1em;
-    margin: 1em 0;
     box-sizing: border-box;
     color: #808080;
+    margin: 1em 0;
+    padding: 0 1em;
+    text-align: center;
 }
 
 .article i {
@@ -110,43 +113,49 @@ html, body {
 
 .article__button {
     background-color: #4CAF50;
+    border: 2px solid #4CAF50;
+    border-radius: 6px;
     color: #ffffff;
     font-size: 1em;
-    width: 8em;
     height: 2em;
-    border-radius: 6px;
-    border: 2px solid #4CAF50;
     margin: 0.5em 0 0 0;
+    width: 8em;
 }
 
 .info {
     background-color: #505050;
-    text-align: center;
-    color: #A9A9A9;
-    padding: 1em;
-    margin: 0;
     box-sizing: border-box;
+    color: #A9A9A9;
+    margin: 0;
+    padding: 1em;
+    text-align: center;
 }
 
 .info p {
     margin: 0;
 }
 
+.info__social {
+    padding: 0.5em 0 0 0;
+}
+
 /* layout tablet */
 @media(min-width: 768px) {
-    .video iframe {
-        width: 30%;
-    }
-
-    .cards article {
-        width: 30%;
-        display: inline-block;
-    }
     .header__menu-hamburger {
         display: none;
     }
-    .header__menu-aside{
+
+    .header__menu-aside {
         display: initial;
+    }
+    
+    .cards article {
+        display: inline-block;
+        width: 30%;
+    }
+    
+    .video iframe {
+        width: 30%;
     }
 }
 
