@@ -1,89 +1,59 @@
-/* ORLEANS */
-
-* {
+html, body {
     margin: 0;
     padding: 0;
 }
 
-/* TANAKA */
-title {
-    text-transform: uppercase;
-}
-
-/* Removendo bullets e colocando borda */
-body {
-    font-family: arial, helvetica, sans-serif;
-    font-size: 12px;
-}
-
+/* RAPHAEL */
 .header {
-    list-style:none; 
-    border:1px solid #c0c0c0; 
-    float:left; 
+    display: block;
+    background-image: url('https://comprandomeuape.com.br/wp-content/uploads/2016/01/CMA-tipos-de-cabides-04.jpg');
+    background-size: cover;
+    width: 100%;
+    padding: 0 1em;
+    box-sizing: border-box;
+}
+.header a {
+    font-size: 2em;
+    color: white;
 }
 
-/* Estilizando itens do menu */
-.header__menu li {
-    position:relative; 
-    float:left; 
-    border-right:1px solid #c0c0c0; 
+.header__menu {
+    float:right;
 }
 
-/* Estilizando links */
-.header__menu li a {
-    color:#333; 
-    text-decoration:none; 
-    padding:5px 10px; 
-    display:block;
+.header h3 {
+    text-align: center;
+    color: white;
 }
 
-.header__menu li a:hover {
-    background:#333; 
-    color:#fff; 
-    -ms-box-shadow:0 3px 10px 0 #ccc; 
-    -moz-box-shadow:0 3px 10px 0 #CCC; 
-    -o-box-shadow:0 3px 10px 0 #ccc; 
-    -webkit-box-shadow:0 3px 10px 0 #ccc; 
-    box-shadow:0 3px 10px 0 #ccc; 
-    text-shadow:0px 0px 5px #fff; 
+.header__link-down{
+    display: block;
+    text-align: center;
 }
-
-/* Escondendo submenu */
-.header__menu li ul {
-    position:absolute; 
-    top:25px; 
-    left:0;
-    background-color: #fff; 
-    display:none;
-}
-
-/* Exibindo submenu */
-.header__menu li.hover ul,
-.header__menu li.over ul {
-    display:block;
-}
-
-.header__menu li ul li {
-border:1px solid #c0c0c0; 
-display:block; 
-width:150px;
-}
-
-
 
 /* TANAKA */
 .cards {
     text-align: center;
+    padding: 0 1em;
+    margin: 1em 0 0 0;
+    box-sizing: border-box;
+    color:#808080;
 }
 
 .cards__title {
     font-size: 3em;
-    color:#808080;
+    
+    margin: 0;
 }
 
 .cards h4 {
-    color:#808080;
+    
     font-weight: bold;
+    margin: 0;
+}
+
+.cards p {
+    margin: 0;
 }
 
 /* POLI */
@@ -91,15 +61,35 @@ width:150px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     color: #808080;
+    padding: 0 1em;
+    margin: 1em 0 0 0;
+    box-sizing: border-box;
+}
+
+.video iframe {
+    width: 100%;
+    height: auto;
 }
 
 /* TANAKA */
 .article {
     text-align: center;
+    padding: 0 1em;
+    margin: 1em 0;
+    box-sizing: border-box;
+    color: #808080;
 }
 
-.article__title {
+.article i {
+    font-size: 10em;
+}
 
+.article__tittle {
+    margin: 1em 0 0 0;
+}
+
+.article p {
+    margin: 0;
 }
 
 .article__button {
@@ -110,18 +100,35 @@ width:150px;
     height: 2em;
     border-radius: 6px;
     border: 2px solid #4CAF50;
-}
-
-.fa {
-    color: #808080;
-}
-
-.fa-globe {
-    font-size: 10em;
+    margin: 0.5em 0 0 0;
 }
 
 .info {
     background-color: #505050;
     text-align: center;
     color: #A9A9A9;
+    padding: 1em;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.info p {
+    margin: 0;
+}
+
+/* layout tablet */
+@media(min-width: 768px) {
+    .video iframe {
+        width: 30%;
+    }
+
+    .cards article {
+        width: 30%;
+        display: inline-block;
+    }
+}
+
+/* layout desktop */
+@media(min-width: 992px) {
+    
 }
