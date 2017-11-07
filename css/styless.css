@@ -1,33 +1,43 @@
-*{margin: 0; padding: 0;}
+/* ORLEANS */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* TANAKA */
+title {
+    text-transform: uppercase;
+}
 
 /* Removendo bullets e colocando borda */
-body{
+body {
     font-family: arial, helvetica, sans-serif;
     font-size: 12px;
 }
 
-.header{
+.header {
     list-style:none; 
     border:1px solid #c0c0c0; 
     float:left; 
 }
 
 /* Estilizando itens do menu */
-.header__menu li{
+.header__menu li {
     position:relative; 
     float:left; 
     border-right:1px solid #c0c0c0; 
 }
 
 /* Estilizando links */
-.header__menu li a{
+.header__menu li a {
     color:#333; 
     text-decoration:none; 
     padding:5px 10px; 
     display:block;
 }
 
-.header__menu li a:hover{
+.header__menu li a:hover {
     background:#333; 
     color:#fff; 
     -ms-box-shadow:0 3px 10px 0 #ccc; 
@@ -39,7 +49,7 @@ body{
 }
 
 /* Escondendo submenu */
-.header__menu li ul{
+.header__menu li ul {
     position:absolute; 
     top:25px; 
     left:0;
@@ -49,44 +59,47 @@ body{
 
 /* Exibindo submenu */
 .header__menu li.hover ul,
-.header__menu li.over ul{
+.header__menu li.over ul {
     display:block;
 }
 
-.header__menu li ul li{
+.header__menu li ul li {
 border:1px solid #c0c0c0; 
 display:block; 
 width:150px;
 }
 
-.video {
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    color: gray;
-}
 
+
+/* TANAKA */
 .cards {
     text-align: center;
 }
 
-.article p:first-child {
-    color: #666666;
-}
-
 .cards__title {
     font-size: 3em;
-}
-
-.cards p {
     color:#808080;
 }
 
+.cards h4 {
+    color:#808080;
+    font-weight: bold;
+}
+
+/* POLI */
+.video {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #808080;
+}
+
+/* TANAKA */
 .article {
     text-align: center;
 }
 
-.article p:first-child {
-    color: #666666;
+.article__title {
+
 }
 
 .article__button {
@@ -100,9 +113,15 @@ width:150px;
 }
 
 .fa {
-    color:dimgray;
+    color: #808080;
 }
 
 .fa-globe {
     font-size: 10em;
+}
+
+.info {
+    background-color: #505050;
+    text-align: center;
+    color: #A9A9A9;
 }
